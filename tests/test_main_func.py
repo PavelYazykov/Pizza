@@ -11,11 +11,8 @@ from pages.checkout import Checkout
 
 
 @allure.description('Добавление пиццы в корзину со слайдера')
-def test_01():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_01(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -31,11 +28,8 @@ def test_01():
 
 
 @allure.description('Проверка работы слайдера')
-def test_02():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_02(selenium):
+    driver = selenium
 
     """Проверка работы слайдера"""
     main_p = Main_page(driver)
@@ -43,11 +37,8 @@ def test_02():
 
 
 @allure.description('Просмотр информации о пицце')
-def test_03():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_03(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -62,11 +53,8 @@ def test_03():
 
 
 @allure.description('Добавление опций к пицце')
-def test_04():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_04(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -91,11 +79,8 @@ def test_04():
 
 
 @allure.description('Редактирование корзины')
-def test_05():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_05(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -118,11 +103,8 @@ def test_05():
 
 
 @allure.description('Переход в раздел десерты')
-def test_06():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_06(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -143,11 +125,8 @@ def test_06():
 
 
 @allure.description('Настройка фильтров в разделе десерты и добавление в корзину')
-def test_07():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_07(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -169,11 +148,8 @@ def test_07():
 
 
 @allure.description('Регистрация пользователя')
-def test_08():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_08(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -189,11 +165,8 @@ def test_08():
 
 
 @allure.description('Авторизация пользователя')
-def test_09():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_09(selenium):
+    driver = selenium
 
     """Переход на сайт"""
     main_p = Main_page(driver)
@@ -206,77 +179,56 @@ def test_09():
 
 
 @allure.description('Авторизация с пустым полем Логин')
-def test_10():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_10(selenium):
+    driver = selenium
 
     my_account_p = My_account(driver)
     my_account_p.authorization_empty_login()
 
 
 @allure.description('Авторизация с пустым полем Пароль')
-def test_11():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_11(selenium):
+    driver = selenium
 
     my_account_p = My_account(driver)
     my_account_p.authorization_empty_password()
 
 
 @allure.description('Проверка восстановления пароля')
-def test_12():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_12(selenium):
+    driver = selenium
 
     my_account_p = My_account(driver)
     my_account_p.check_forget_password_link()
 
 
 @allure.description('Регистрация с существующим email')
-def test_13():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_13(selenium):
+    driver = selenium
 
     registration_p = Registration(driver)
     registration_p.registration_exist_email()
 
 
 @allure.description('Регистрация с пустым полем логин')
-def test_14():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_14(selenium):
+    driver = selenium
 
     registration_p = Registration(driver)
     registration_p.registration_without_login()
 
 
 @allure.description('Регистрация с пустым полем пароль')
-def test_15():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_15(selenium):
+    driver = selenium
 
     registration_p = Registration(driver)
     registration_p.registration_without_password()
 
 
 @allure.description('Покупка и оформление заказа')
-def test_16():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_16(selenium):
+    driver = selenium
 
     """Выбор товара, переход в корзину и переход к оформлению заказа"""
     main_p = Main_page(driver)

@@ -11,11 +11,8 @@ import allure
 
 
 @allure.description('Проверка применения верного промокода')
-def test_01():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_01(selenium):
+    driver = selenium
 
     """Выбор пиццы и переход в корзину"""
     main_p = Main_page(driver)
@@ -31,11 +28,8 @@ def test_01():
 
 
 @allure.description('Проверка применения ошибочного промокода')
-def test_02():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_02(selenium):
+    driver = selenium
 
     """Выбор пиццы и переход в корзину"""
     main_p = Main_page(driver)
@@ -62,6 +56,7 @@ def test_03(page: Page):
     go_cart.click()
     promo_field = page.wait_for_selector('//input[@id="coupon_code"]')
     promo_field.fill('GIVEMEHALYAVA')
+    time.sleep(10)
     promo_button = page.wait_for_selector('//button[@name="apply_coupon"]')
     page.route("https://pizzeria.skillbox.cc/?wc-ajax=apply_coupon", lambda route: route.abort())
     promo_button.click()
@@ -69,11 +64,8 @@ def test_03(page: Page):
 
 
 @allure.description('Проверка повторного применения промокода')
-def test_04():
-    options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
-    g = Service()
-    driver = webdriver.Chrome(options=options, service=g)
+def test_04(selenium):
+    driver = selenium
 
     """Добавление пиццы в корзину и переход на страницу оформдения заказа"""
     main_p = Main_page(driver)
