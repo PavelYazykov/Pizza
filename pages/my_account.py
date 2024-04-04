@@ -8,7 +8,6 @@ from base.base import Base
 
 
 class My_account(Base):
-
     """locators"""
 
     account_button = '//li[@id="menu-item-30"]'
@@ -17,7 +16,7 @@ class My_account(Base):
     password_field = '//input[@id="password"]'
     auth_button = '//button[@name="login"]'
     field_error = '//ul[@class="woocommerce-error"]/li'
-    forget_password = 'Забыли пароль?'
+    forget_password = "Забыли пароль?"
     reset_password_field = '//input[@name="user_login"]'
     reset_button = '//button[@value="Reset password"]'
     message = '//div[@class="woocommerce-message"]'
@@ -25,44 +24,54 @@ class My_account(Base):
     """Methods"""
 
     def get_account_button(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.account_button)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.account_button))
+        )
 
     def get_registration_button(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.registration_button)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.registration_button))
+        )
 
     def get_name_field(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.name_field)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.name_field))
+        )
 
     def get_password_field(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.password_field)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.password_field))
+        )
 
     def get_auth_button(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.auth_button)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.auth_button))
+        )
 
     def get_field_error(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.field_error)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.field_error))
+        )
 
     def get_forget_password(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.LINK_TEXT, self.forget_password)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.LINK_TEXT, self.forget_password))
+        )
 
     def get_reset_password(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.reset_password_field)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.reset_password_field))
+        )
 
     def get_reset_button(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.reset_button)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.reset_button))
+        )
 
     def get_message(self):
-        return WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(
-            (By.XPATH, self.message)))
+        return WebDriverWait(self.driver, 15).until(
+            EC.element_to_be_clickable((By.XPATH, self.message))
+        )
 
     """Actions"""
 
@@ -75,28 +84,28 @@ class My_account(Base):
         print('Переход на страницу "Регистрация"')
 
     def send_name_field(self):
-        self.get_name_field().send_keys('pawel')
-        print('Введено имя пользователя')
+        self.get_name_field().send_keys("pawel")
+        print("Введено имя пользователя")
 
     def send_password_field(self):
-        self.get_password_field().send_keys('123456789')
-        print('Введен пароль')
+        self.get_password_field().send_keys("123456789")
+        print("Введен пароль")
 
     def click_auth_button(self):
         self.get_auth_button().click()
-        print('Клик по кнопке авторизации')
+        print("Клик по кнопке авторизации")
 
     def click_forget_password(self):
         self.get_forget_password().click()
-        print('Клик по кнопке восстановления пароля')
+        print("Клик по кнопке восстановления пароля")
 
     def send_reset_password(self):
-        self.get_reset_password().send_keys('pawel')
-        print('Введен логин для сброса пароля')
+        self.get_reset_password().send_keys("pawel")
+        print("Введен логин для сброса пароля")
 
     def click_reset_button(self):
         self.get_reset_button().click()
-        print('Клик по кнопке Сброс пароля')
+        print("Клик по кнопке Сброс пароля")
 
     """Methods"""
 
@@ -106,36 +115,38 @@ class My_account(Base):
             self.click_registration_button()
 
     def go_my_account(self):
-        with allure.step('Переход на вкладку Мой аккаунт'):
+        with allure.step("Переход на вкладку Мой аккаунт"):
             self.click_account_button()
 
     def authorization(self):
-        with allure.step('Авторизация'):
+        with allure.step("Авторизация"):
             self.send_name_field()
             self.send_password_field()
             self.click_auth_button()
 
     def authorization_empty_login(self):
-        with allure.step('Авторизация c пустым полем логин'):
-            self.driver.get('https://pizzeria.skillbox.cc/my-account/')
+        with allure.step("Авторизация c пустым полем логин"):
+            self.driver.get("https://pizzeria.skillbox.cc/my-account/")
             self.driver.maximize_window()
             self.send_password_field()
             self.click_auth_button()
-            self.get_value(self.get_field_error(), 'Error: Имя пользователя обязательно.')
+            self.get_value(
+                self.get_field_error(), "Error: Имя пользователя обязательно."
+            )
 
     def authorization_empty_password(self):
-        with allure.step('Авторизация c пустым полем пароль'):
-            self.driver.get('https://pizzeria.skillbox.cc/my-account/')
+        with allure.step("Авторизация c пустым полем пароль"):
+            self.driver.get("https://pizzeria.skillbox.cc/my-account/")
             self.driver.maximize_window()
             self.send_name_field()
             self.click_auth_button()
-            self.get_value(self.get_field_error(), 'Пароль обязателен.')
+            self.get_value(self.get_field_error(), "Пароль обязателен.")
 
     def check_forget_password_link(self):
-        self.driver.get('https://pizzeria.skillbox.cc/my-account/')
+        self.driver.get("https://pizzeria.skillbox.cc/my-account/")
         self.driver.maximize_window()
         self.click_forget_password()
         time.sleep(2)
         self.send_reset_password()
         self.click_reset_button()
-        self.get_value(self.get_message(), 'Password reset email has been sent.')
+        self.get_value(self.get_message(), "Password reset email has been sent.")

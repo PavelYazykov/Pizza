@@ -5,10 +5,10 @@ from pages.bonus_programm import Bonus_program
 import allure
 
 
-@allure.description('Регистрация в бонусной системе')
+@allure.description("Регистрация в бонусной системе")
 def test_01():
     options = webdriver.ChromeOptions()
-    options.add_experimental_option('detach', True)
+    options.add_experimental_option("detach", True)
     g = Service()
     driver = webdriver.Chrome(options=options, service=g)
 

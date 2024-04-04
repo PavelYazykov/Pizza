@@ -10,7 +10,7 @@ from pages.registration import Registration
 from pages.checkout import Checkout
 
 
-@allure.description('Добавление пиццы в корзину со слайдера')
+@allure.description("Добавление пиццы в корзину со слайдера")
 def test_01(selenium):
     driver = selenium
 
@@ -27,7 +27,7 @@ def test_01(selenium):
     cart_p.assertion_pizza()
 
 
-@allure.description('Проверка работы слайдера')
+@allure.description("Проверка работы слайдера")
 def test_02(selenium):
     driver = selenium
 
@@ -36,7 +36,7 @@ def test_02(selenium):
     main_p.slider_test()
 
 
-@allure.description('Просмотр информации о пицце')
+@allure.description("Просмотр информации о пицце")
 def test_03(selenium):
     driver = selenium
 
@@ -52,7 +52,7 @@ def test_03(selenium):
     about_pizza_p.check_pizza_info()
 
 
-@allure.description('Добавление опций к пицце')
+@allure.description("Добавление опций к пицце")
 def test_04(selenium):
     driver = selenium
 
@@ -78,7 +78,7 @@ def test_04(selenium):
     cart_p.assertion_cheese_bort()
 
 
-@allure.description('Редактирование корзины')
+@allure.description("Редактирование корзины")
 def test_05(selenium):
     driver = selenium
 
@@ -102,7 +102,7 @@ def test_05(selenium):
     cart_p.edit_cart()
 
 
-@allure.description('Переход в раздел десерты')
+@allure.description("Переход в раздел десерты")
 def test_06(selenium):
     driver = selenium
 
@@ -124,7 +124,7 @@ def test_06(selenium):
     dessert_p.check_dessert()
 
 
-@allure.description('Настройка фильтров в разделе десерты и добавление в корзину')
+@allure.description("Настройка фильтров в разделе десерты и добавление в корзину")
 def test_07(selenium):
     driver = selenium
 
@@ -147,7 +147,7 @@ def test_07(selenium):
     cart_p.assert_dessert()
 
 
-@allure.description('Регистрация пользователя')
+@allure.description("Регистрация пользователя")
 def test_08(selenium):
     driver = selenium
 
@@ -164,7 +164,7 @@ def test_08(selenium):
     registration_p.registration()
 
 
-@allure.description('Авторизация пользователя')
+@allure.description("Авторизация пользователя")
 def test_09(selenium):
     driver = selenium
 
@@ -178,7 +178,7 @@ def test_09(selenium):
     account_p.authorization()
 
 
-@allure.description('Авторизация с пустым полем Логин')
+@allure.description("Авторизация с пустым полем Логин")
 def test_10(selenium):
     driver = selenium
 
@@ -186,7 +186,7 @@ def test_10(selenium):
     my_account_p.authorization_empty_login()
 
 
-@allure.description('Авторизация с пустым полем Пароль')
+@allure.description("Авторизация с пустым полем Пароль")
 def test_11(selenium):
     driver = selenium
 
@@ -194,7 +194,7 @@ def test_11(selenium):
     my_account_p.authorization_empty_password()
 
 
-@allure.description('Проверка восстановления пароля')
+@allure.description("Проверка восстановления пароля")
 def test_12(selenium):
     driver = selenium
 
@@ -202,7 +202,7 @@ def test_12(selenium):
     my_account_p.check_forget_password_link()
 
 
-@allure.description('Регистрация с существующим email')
+@allure.description("Регистрация с существующим email")
 def test_13(selenium):
     driver = selenium
 
@@ -210,7 +210,7 @@ def test_13(selenium):
     registration_p.registration_exist_email()
 
 
-@allure.description('Регистрация с пустым полем логин')
+@allure.description("Регистрация с пустым полем логин")
 def test_14(selenium):
     driver = selenium
 
@@ -218,7 +218,7 @@ def test_14(selenium):
     registration_p.registration_without_login()
 
 
-@allure.description('Регистрация с пустым полем пароль')
+@allure.description("Регистрация с пустым полем пароль")
 def test_15(selenium):
     driver = selenium
 
@@ -226,7 +226,7 @@ def test_15(selenium):
     registration_p.registration_without_password()
 
 
-@allure.description('Покупка и оформление заказа')
+@allure.description("Покупка и оформление заказа")
 def test_16(selenium):
     driver = selenium
 

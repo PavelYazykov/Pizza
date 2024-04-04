@@ -10,7 +10,7 @@ from playwright.sync_api import Page, expect
 import allure
 
 
-@allure.description('Проверка применения верного промокода')
+@allure.description("Проверка применения верного промокода")
 def test_01(selenium):
     driver = selenium
 
@@ -27,7 +27,7 @@ def test_01(selenium):
     cart_p.assert_cupon_right()
 
 
-@allure.description('Проверка применения ошибочного промокода')
+@allure.description("Проверка применения ошибочного промокода")
 def test_02(selenium):
     driver = selenium
 
@@ -44,26 +44,31 @@ def test_02(selenium):
     cart_p.assert_cupon_wrong()
 
 
-@allure.description('Проверка применения промокода при сбоях сервера')
+@allure.description("Проверка применения промокода при сбоях сервера")
 def test_03(page: Page):
-    page.goto('https://pizzeria.skillbox.cc/')
-    pizza_add_cart = page.wait_for_selector('(//a[@class="button product_type_simple add_to_cart_button'
-                                            ' ajax_add_to_cart"])[6]')
+    page.goto("https://pizzeria.skillbox.cc/")
+    pizza_add_cart = page.wait_for_selector(
+        '(//a[@class="button product_type_simple add_to_cart_button'
+        ' ajax_add_to_cart"])[6]'
+    )
     time.sleep(1)
     pizza_add_cart.click()
     time.sleep(1)
     go_cart = page.wait_for_selector('(//a[contains(text(), "Корзина")])[1]')
     go_cart.click()
     promo_field = page.wait_for_selector('//input[@id="coupon_code"]')
-    promo_field.fill('GIVEMEHALYAVA')
+    promo_field.fill("GIVEMEHALYAVA")
     time.sleep(10)
     promo_button = page.wait_for_selector('//button[@name="apply_coupon"]')
-    page.route("https://pizzeria.skillbox.cc/?wc-ajax=apply_coupon", lambda route: route.abort())
+    page.route(
+        "https://pizzeria.skillbox.cc/?wc-ajax=apply_coupon",
+        lambda route: route.abort(),
+    )
     promo_button.click()
     time.sleep(10)
 
 
-@allure.description('Проверка повторного применения промокода')
+@allure.description("Проверка повторного применения промокода")
 def test_04(selenium):
     driver = selenium
 
