@@ -4,39 +4,41 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49fea031-2ff8-4d1c-b1e3-7143d5a61aaf" name="Changes" comment="project fixed">
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/15bd5011-ece1-409d-bf4a-ba7a2ed64e5f-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/20ea87e2-d255-49ac-9fb7-d488b2117f47-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/4d2eb7d6-e60f-4ebd-8c2c-84827fa4ac17-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/4d9e914c-c239-4a7c-8a28-18be744356e0-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/55454607-fd5d-49df-86a5-8aca6d0f08cd-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/66dec21f-d7a2-4245-a1f2-e4d38ed1f888-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/6f0e90af-e5d4-43d8-9400-b840890e0236-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/71c9c7f4-d9c0-4df3-bb91-8fa306174675-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/73367867-c770-4ced-bcfa-fcf0761ccbbf-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/79f63261-5b7f-4c9d-8b4d-43a293b9f731-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/808c9d91-e6d6-43d0-aa47-4fd9acda3ba0-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/83b1cf30-4f2d-4df8-8f22-0400eb86d352-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/858b37b8-3baa-4465-9450-6fb80df8640e-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/89eb62b5-ffb9-486c-84ba-0469e9c625b4-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/8d8ca09d-5158-4af9-9a46-01d543dad8e1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/96f07d27-7c4c-4f77-9196-32880d36660d-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/9cedfe97-b8c1-4407-93da-796cf077a861-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/c0fb1ead-2ff5-4047-a3e2-24a4a4b3d940-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/ca8f14d7-fe2b-46dd-9098-e7373c0a4b19-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/cbd46136-bc12-4bff-b699-d4fad859e8bb-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/cf8635e3-94ae-4b1e-a92f-03189635534a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/d050f648-a316-4c06-ab0f-fcd36664dab8-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/d17d07b5-a92c-4cd4-90b4-f70240dfc817-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/d32c18da-9f45-4a9a-ac36-b8fc26f461fb-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/d3ebc6da-b5ce-4cf9-8cca-ab5f9d54f50b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/d531f278-ee06-4e3e-82d5-1934a6871c39-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/d83637b8-5761-465a-9e29-a46549561bc7-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/eae78476-2568-4302-b2c5-64c0bcc6def8-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/ee014d31-27d8-4d85-b6fd-226e23224cba-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/allure_results/ee220c03-1fa5-41e5-a671-2c04e8148f10-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/request.txt" afterDir="false" />
+    <list default="true" id="49fea031-2ff8-4d1c-b1e3-7143d5a61aaf" name="Changes" comment="black added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/15bd5011-ece1-409d-bf4a-ba7a2ed64e5f-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/20ea87e2-d255-49ac-9fb7-d488b2117f47-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/4d2eb7d6-e60f-4ebd-8c2c-84827fa4ac17-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/4d9e914c-c239-4a7c-8a28-18be744356e0-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/55454607-fd5d-49df-86a5-8aca6d0f08cd-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/66dec21f-d7a2-4245-a1f2-e4d38ed1f888-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/6f0e90af-e5d4-43d8-9400-b840890e0236-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/71c9c7f4-d9c0-4df3-bb91-8fa306174675-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/73367867-c770-4ced-bcfa-fcf0761ccbbf-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/79f63261-5b7f-4c9d-8b4d-43a293b9f731-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/808c9d91-e6d6-43d0-aa47-4fd9acda3ba0-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/83b1cf30-4f2d-4df8-8f22-0400eb86d352-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/858b37b8-3baa-4465-9450-6fb80df8640e-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/89eb62b5-ffb9-486c-84ba-0469e9c625b4-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/8d8ca09d-5158-4af9-9a46-01d543dad8e1-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/96f07d27-7c4c-4f77-9196-32880d36660d-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/9cedfe97-b8c1-4407-93da-796cf077a861-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/c0fb1ead-2ff5-4047-a3e2-24a4a4b3d940-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/ca8f14d7-fe2b-46dd-9098-e7373c0a4b19-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/cbd46136-bc12-4bff-b699-d4fad859e8bb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/cf8635e3-94ae-4b1e-a92f-03189635534a-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/d050f648-a316-4c06-ab0f-fcd36664dab8-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/d17d07b5-a92c-4cd4-90b4-f70240dfc817-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/d32c18da-9f45-4a9a-ac36-b8fc26f461fb-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/d3ebc6da-b5ce-4cf9-8cca-ab5f9d54f50b-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/d531f278-ee06-4e3e-82d5-1934a6871c39-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/d83637b8-5761-465a-9e29-a46549561bc7-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/eae78476-2568-4302-b2c5-64c0bcc6def8-result.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/ee014d31-27d8-4d85-b6fd-226e23224cba-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/allure_results/ee220c03-1fa5-41e5-a671-2c04e8148f10-container.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/request.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +102,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Pavel/PycharmProjects/Pizzeria&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
@@ -114,8 +116,8 @@
       <recent name="C:\Users\Pavel\PycharmProjects\Pizzeria" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_promocode.test_03">
-    <configuration name="Python tests for test_promocode.test_01" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.Python tests for test_main_func.test_01">
+    <configuration name="Python tests for test_main_func.test_01" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Pizzeria" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -126,11 +128,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_promocode.test_01&quot;" />
+      <option name="_new_target" value="&quot;test_main_func.test_01&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_promocode.test_02" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_func.test_02" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Pizzeria" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -141,11 +143,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_promocode.test_02&quot;" />
+      <option name="_new_target" value="&quot;test_main_func.test_02&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_promocode.test_03" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_func.test_07" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Pizzeria" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -156,11 +158,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_promocode.test_03&quot;" />
+      <option name="_new_target" value="&quot;test_main_func.test_07&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_promocode.test_04" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_main_func.test_16" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="Pizzeria" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,7 +173,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_promocode.test_04&quot;" />
+      <option name="_new_target" value="&quot;test_main_func.test_16&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -192,18 +194,18 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_promocode.test_03" />
+        <item itemvalue="Python tests.Python tests for test_main_func.test_01" />
         <item itemvalue="Python tests.Python tests in test_main_func.py" />
-        <item itemvalue="Python tests.Python tests for test_promocode.test_01" />
-        <item itemvalue="Python tests.Python tests for test_promocode.test_04" />
-        <item itemvalue="Python tests.Python tests for test_promocode.test_02" />
+        <item itemvalue="Python tests.Python tests for test_main_func.test_02" />
+        <item itemvalue="Python tests.Python tests for test_main_func.test_07" />
+        <item itemvalue="Python tests.Python tests for test_main_func.test_16" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-5a2391486177-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.13763.11" />
+        <option value="bundled-python-sdk-09665e90c3a7-d3b881c8e49f-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-233.15026.15" />
       </set>
     </attachedChunks>
   </component>
@@ -232,13 +234,22 @@
       <option name="project" value="LOCAL" />
       <updated>1712158406148</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="black added">
+      <option name="closed" value="true" />
+      <created>1712244204748</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1712244204748</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="project done" />
     <MESSAGE value="project fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="project fixed" />
+    <MESSAGE value="black added" />
+    <option name="LAST_COMMIT_MESSAGE" value="black added" />
   </component>
 </project>
